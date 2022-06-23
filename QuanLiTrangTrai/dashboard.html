@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quản lí trang trại</title>
+    <style>
+        body{
+            font-family: monospace;
+        }
+
+        .main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            animation: show 6s linear;
+            overflow: hidden;
+            margin-top: 100px;
+        }
+
+        .text-wrapper{
+            text-align: center;
+            height: 140px;
+        }
+
+        .text{
+            display: block;
+            margin: 12px 0;
+        }
+
+        label.text{
+            font-size: 18px;
+        }
+
+        @keyframes show{
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 40vh;
+            }
+        }
+
+        .selection{
+            padding: 20px 0 10px 0;
+        }
+
+        .selection a{
+            margin: 0 50px;
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            min-width: 280px;
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            transition: 0.3s linear;
+        }
+
+        .selection a:hover{
+            box-shadow: -2px -3px 8px rgba(0, 0, 0, 0.15),
+                        2px 3px 8px rgba(0, 0, 0, 0.15);
+            transform: scale(1.1);
+        }
+
+        footer{
+            font-size: 18px;
+            position: fixed;
+            bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #000;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="text-wrapper">
+            <h1 class="text">Hello</h1>
+            <label class="text">Chào mừng tới trang quản lí trang trại</label>
+            <label class="text">Vui lòng chọn chức năng bạn muốn sử dụng</label>
+        </div>
+        <div class="selection">
+            <a href=""><i class="fa-solid fa-user"></i> Quản lí người dùng</a>
+            <a href="QuanLiMuaVu/quanlimuavu.html"><i class="fa-solid fa-tractor"></i> Quản lí mùa vụ</a>
+        </div>
+        <footer>Copyright belong to nhóm 6</footer>
+    </div>
+</body>
+</html>
